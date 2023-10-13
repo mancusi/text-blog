@@ -44,7 +44,7 @@ export const config: TemplateConfig = {
 };
 
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return document.slug ?? document.entityId.toString();
+  return `/&&&&&${document.slug ?? document.entityId.toString()}`;
 };
 
 export const getHeadConfig: GetHeadConfig<
